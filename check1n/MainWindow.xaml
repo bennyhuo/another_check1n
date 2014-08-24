@@ -1,0 +1,83 @@
+﻿<Window x:Class="check1n.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="考勤助手1.0" Width="222" MinHeight="550" MinWidth="360" Loaded="onLoad" Icon="paw.jpg">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250">
+                
+            </RowDefinition>
+            <RowDefinition>
+                
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid MinHeight="250" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition>
+
+                </RowDefinition>
+                <RowDefinition>
+
+                </RowDefinition>
+                <RowDefinition>
+
+                </RowDefinition>
+
+                <RowDefinition>
+
+                </RowDefinition>
+                <RowDefinition>
+
+                </RowDefinition>
+
+            </Grid.RowDefinitions>
+            
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="0">
+                <Label Content="考勤助手" VerticalAlignment="Center" FontSize="25"></Label>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="5">
+                <Button Content="保存记录" Margin="0,0,5,0" VerticalAlignment="Center" Width="75" Click="onSaveClick"/>
+                <Button Content="获取记录" Margin="5,0,0,0" VerticalAlignment="Center" Width="75" Click="onClick"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1">
+                <Label Content="起始日期" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="60" />
+                <DatePicker x:Name="startTimePicker" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="95" CalendarClosed="onStartTimeSet"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2">
+                <Label Content="结束日期" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="60" />
+                <DatePicker x:Name="endTimePicker" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="95" CalendarClosed="onEndTimeSet"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="3">
+                <Button Content="前一月" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="55" Click="onPreMonth" />
+                <Button Content="当月" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="55"  Click="onCurrentMonth" />
+                <Button Content="后一月" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="55" Click="onNextMonth" />
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="listparent" Margin="5,5,5,5" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition>
+                    
+                </RowDefinition>
+            </Grid.RowDefinitions>
+            <!--<ScrollViewer MaxHeight="250" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" CanContentScroll="True">-->
+                <ListView Grid.Row="0"  x:Name="list" Margin="5,5,5,5" HorizontalAlignment="Center">
+                    <ListView.View>
+
+                        <GridView>
+                            <GridViewColumn Header="序号" Width="auto"  DisplayMemberBinding="{Binding Path=Index}"></GridViewColumn>
+                            <GridViewColumn Header="签到" Width="120" DisplayMemberBinding="{Binding Path=StartTime}"></GridViewColumn>
+                            <GridViewColumn Header="离开" Width="120" DisplayMemberBinding="{Binding Path=EndTime}"></GridViewColumn>
+                            <GridViewColumn Header="时长" Width="50" DisplayMemberBinding="{Binding Path=LastTime}"></GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+
+                </ListView>
+            <!--</ScrollViewer>-->
+            
+        </Grid>
+    </Grid>
+</Window>

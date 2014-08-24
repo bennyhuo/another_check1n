@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="check1n.exe" version="1.0.0.1" publicKeyToken="c0ae02705ea55fdd" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="check1n" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="check1n.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="check1n.exe" size="67072">
+      <assemblyIdentity name="check1n" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZJWA65O6iqnsm6itY6GJR7GmqKsC7xu+3PLSXOHJr48=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="check1n.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Enbandari-PC\Enbandari" issuerKeyHash="a414b163929a9a3146cdad0e842e1777f2c3f117" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>NL/Nf1+GjzKQSymr1QPdYX+orOGxjRks+2eBPkJKCF0=</DigestValue></Reference></SignedInfo><SignatureValue>engFN8Imn9BblPpthfpdmLFicL//vH79BTDYn3erumS3Sija8+lW1z7FSMEwtg1rlbhmhm9CDcagWsmDYBc1ilVEKfCg12x/XMEMpQxU9KX1DPhsB1FYjaPZ8FDUBzqsn8nJT83r024gfGpFBqHrBDdNb6T3j5R3w+Vk+TrxHNE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tbG6EarolpuIum4a/gcmQOTE+k9FSYEf5KjQ44oqoFm9ayeWE+6MvBueQEU8GSpu5P1k7lZy0AgJOC3vnJBZz85bhzgaKn01e2dypV9+3vQQ681RAMt3WJj3h8CReT+yBmc6B+axMNidExb6Bu0QYrwRi32V87I5hl3+CxARIuM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="5d084a423e8167fb2c198db1e1aca87f61dd03d5ab294b90328f865f7fcdbf34" Description="" Url=""><as:assemblyIdentity name="check1n.exe" version="1.0.0.1" publicKeyToken="c0ae02705ea55fdd" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Enbandari-PC\Enbandari</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>HJfb4TJvYyiJY69aX1hXSO+tVaVHowQDdNjgcuv5JO0=</DigestValue></Reference></SignedInfo><SignatureValue>QjiA8oTMlonPXsqjIvIvS57wpU/egt6ybOYar3na0d3HQ8Rzf2wt4daz5ugOjVTpPEWvsiuwS6yDmA0TF0a5C4qmnBdZ8sY2WsNGpMuqIy5ct6sJ1JVK7E40EBsSMU4tcQz+DdDmPBquiGk2J2LYe+pgzdGtcKm9x4XGfK2VptA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tbG6EarolpuIum4a/gcmQOTE+k9FSYEf5KjQ44oqoFm9ayeWE+6MvBueQEU8GSpu5P1k7lZy0AgJOC3vnJBZz85bhzgaKn01e2dypV9+3vQQ681RAMt3WJj3h8CReT+yBmc6B+axMNidExb6Bu0QYrwRi32V87I5hl3+CxARIuM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQY7koXqf+O5JCgWgI6tAfHjANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwARQBuAGIAYQBuAGQAYQByAGkALQBQAEMAXABFAG4AYgBhAG4AZABhAHIAaTAeFw0xNDA0MTkwOTQ2MTVaFw0xNTA0MTkxNTQ2MTVaMDcxNTAzBgNVBAMeLABFAG4AYgBhAG4AZABhAHIAaQAtAFAAQwBcAEUAbgBiAGEAbgBkAGEAcgBpMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC1sboRquiWm4i6bhr+ByZA5MT6T0VJgR/kqNDjiiqgWb1rJ5YT7oy8G55ARTwZKm7k/WTuVnLQCAk4Le+ckFnPzluHOBoqfTV7Z3KlX37e9BDrzVEAy3dYmPeHwJF5P7IGZzoH5rEw2J0TFvoG7RBivBGLfZXzsjmGXf4LEBEi4wIDAQABMA0GCSqGSIb3DQEBCwUAA4GBADcXAssXG/dKv/JS9iWhhXSVLHAhA4i0+5q6XZXQDPzk7xdBbL6A41K3ZLjIqcaxZeL1AzU/J/EfLWrb+J7kMP6qzhQ4inDFMwz9dX4I8Rj99TryBYfKlcsl0R3WAQDvI/4WcyAFsPpl13yU3Q5q0VCaGWNwDRszUpVfLzD9/Tkb</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
